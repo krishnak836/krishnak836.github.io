@@ -1,0 +1,287 @@
+@import url(./values/variable.css);
+@import url(./values/global.css);
+html,body{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background:var(--gradient-color); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: var(--gradient-color); 
+}
+
+
+.site-banner,.main_header{
+    background: var(--gradient-color2);
+
+}
+.site-banner{
+    padding: 3rem;
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius:20%;
+}
+/*Social link Bar*/
+.icon-bar {
+    position: fixed;
+    top: 20%;
+    z-index: 4;
+  }
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 11px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .github,.hackerrank{
+      background: #424447;
+      color: white;
+  }
+  .linkedin {
+      background: #007bb5;
+      color: white;
+  }
+  .gmail{
+      background: #dd4b39;
+      color: white;
+  }
+  .whatsapp{
+      background: #25d366;
+      color: white;
+  }
+  .navbar-fixed-top{
+      right: 0;
+      left: 0;
+      position: fixed;
+      
+  }
+  .navbar{
+padding: 2rem;
+  }
+.navbar .navbar-brand{ 
+    padding: 1rem 0;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family:var(Pacifico),cursive;
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 2rem 1.2rem;
+    font-size: 1.4rem;
+    position:relative;
+    color: #000;
+    font-family: var(--roboto);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    border-top: 4px solid #4458dc;
+}
+
+.intro_banner{
+    max-width: fit-content;
+    padding: 2rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 20px;
+}
+img.developer-image
+{  max-width: 100%;
+}
+.avatar {
+    object-fit: cover;
+    border-radius:50%;
+    width: 50px;
+    margin: auto;
+    height: 50px;
+  }
+  
+ .main_block .site-banner .site-title h3{
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 2rem;
+} 
+.site-buttons{
+    margin-top: 1rem;
+}
+
+.main_block .site-banner .site- .site-title h1{
+    font-weight: 100;
+    font-size: 0.5rem;
+}
+
+.main_block.site-banner .site-title h4{
+    font-size: 1rem;
+}
+
+.element {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 20px;
+    margin: 2rem;
+  }
+  .call{
+      padding: 1rem;
+      width: fit-content;
+      height: fit-content;
+     
+
+  }
+  .contact {
+      max-width: 100%;
+  }
+  .contact a {
+       border-radius: 16px;
+  background: linear-gradient(145deg, #e1e1e1, #ffffff);
+  box-shadow:  11px 11px 22px #d7d7d7,
+               -11px -11px 22px #ffffff;  
+   
+    display: inline-block;
+    text-align: center;
+    padding: 11px;
+    transition: all 0.3s ease;
+    color: gray;
+    font-size: 30px;
+    margin: 1rem;
+  }
+  .contact a:focus{
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+  }
+  .contact a:hover {
+    box-shadow: -2px -2px 5px white, 2px 2px 5px   }
+
+  .personal_details,.contact{
+      font-family: var(--roboto);
+  }
+
+.skills-category{
+    padding: 2rem;
+}
+.main_block .skills h1 > span, .main_block .project-area h1 > span{
+    display: block;
+    margin-bottom: auto;
+    text-align: center;
+    font: normal bold 49px/ 60px var(--roboto);
+    letter-spacing: 20px;
+}
+
+
+.main_block .skills{
+    padding: 5rem ;
+    font-family: var(--roboto);
+    font-style: italic;
+}
+
+.single-skill{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    display: inline-block;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.single-skill > i{
+    width: 50%;
+    font-size: 3rem;
+}
+
+.single-skill:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.single-skill:hover > i{
+    filter: brightness(0.15);
+}
+
+.experience-area{
+    padding-left: 1rem;
+}
+
+.experience-area span{
+    display: block;
+}
+
+.experience-area .years-area{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.experience-area .years-area .years{
+    font: normal bold 50px/20px var(--roboto);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.experience-area .years-area h2 > span{
+    font: normal 600 18px/28px var(--roboto);
+}
+
+/* Project Area */ 
+
+.main_block .project-area{
+    padding: 4rem 0;
+    font-family: var(--roboto);
+}
+.card-img{
+    min-width: 100%;
+    min-height: 100%;
+  object-fit: cover;
+
+}
+
+/* Footer Area */ 
+
+footer.footer-area{
+    padding: 5rem 0;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: black;
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+
+/* End Footer */ 

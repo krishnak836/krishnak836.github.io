@@ -1,0 +1,54 @@
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 340px){
+    .main_header .main-menu .navbar,
+    .main_header .main-menu .navbar .navbar-brand
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    .main_block .site-banner .site-title h1{
+        font-size: 41px;
+    }
+    .icon-bar a{
+		padding:0;
+	}
+
+}
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 792px){
+    .main_block .skills  h1 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .main_block .brand-area .experience-area .years-area{
+        padding-left: 1%;
+        width: 49%;
+    }
+
+    .icon-bar a{
+		padding:0;
+	}
+}
+
+
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+    .main_header .main-menu .navbar{
+        padding: 1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .main_block .brand-area{
+        padding: 3% 4%;
+    }
+
+
+}
