@@ -13,25 +13,33 @@
     .icon-bar a{
 		padding:0;
 	}
+    .icon-menu a{
+		padding:0;
+	}
 
 }
 
 
 /* if the viewport is equal to 340px or less than that */ 
 @media only screen and (max-width: 792px){
-    .main_block .skills  h1 > span{
+    .main_block .skills  h1 > span, .main_block .project-area  h1 > span, .main_block .work-area  h1 > span, .main_block .education-area  h1 > span{
         font-size: 31px;
         letter-spacing: 10px;
-    }
-
-    .main_block .brand-area .experience-area .years-area{
-        padding-left: 1%;
-        width: 49%;
     }
 
     .icon-bar a{
 		padding:0;
 	}
+    .icon-menu p{
+		padding:0;
+        display: none;
+	}
+    .main_block .work-area{
+        padding: 1rem;
+    }
+    .single-skill{
+        padding: 0%;
+    }
 }
 
 
@@ -45,10 +53,4 @@
     .container{
         max-width: 90%;
     }
-
-    .main_block .brand-area{
-        padding: 3% 4%;
-    }
-
-
 }

@@ -35,7 +35,7 @@ html,body{
 /*Social link Bar*/
 .icon-bar {
     position: fixed;
-    top: 20%;
+    top: 60%;
     z-index: 4;
   }
   .icon-bar a {
@@ -51,7 +51,26 @@ html,body{
     background-color: #000;
   }
   
-  .github,.hackerrank{
+  .icon-menu {
+    position: fixed;
+    top: 15%;
+    z-index: 4;
+  }
+  .icon-menu a {
+    display: block;
+    text-align: center;
+    padding: 7px;
+    transition: all 0.3s ease;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .icon-menu a:hover {
+    background:var(--gradient-color);
+    color: white;
+  }
+
+  .github,.hackerrank,.home,.education,.projects,.skill{
       background: #424447;
       color: white;
   }
@@ -67,12 +86,7 @@ html,body{
       background: #25d366;
       color: white;
   }
-  .navbar-fixed-top{
-      right: 0;
-      left: 0;
-      position: fixed;
-      
-  }
+  
   .navbar{
 padding: 2rem;
   }
@@ -146,7 +160,7 @@ img.developer-image
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 20px;
-    margin: 2rem;
+    margin-top: 2rem;
   }
   .call{
       padding: 1rem;
@@ -185,7 +199,7 @@ img.developer-image
 .skills-category{
     padding: 2rem;
 }
-.main_block .skills h1 > span, .main_block .project-area h1 > span{
+.main_block .skills h1 > span, .main_block .project-area h1 > span, .main_block .education-area h1 > span, .main_block .work-area h1 > span{
     display: block;
     margin-bottom: auto;
     text-align: center;
@@ -193,11 +207,14 @@ img.developer-image
     letter-spacing: 20px;
 }
 
-
-.main_block .skills{
+.main_block .work-area ul >li{
+    color: #424447;
+}
+.main_block .skills,.main_block .work-area{
     padding: 5rem ;
     font-family: var(--roboto);
     font-style: italic;
+    font-size: 20px;
 }
 
 .single-skill{
@@ -252,7 +269,7 @@ img.developer-image
 
 /* Project Area */ 
 
-.main_block .project-area{
+.main_block .project-area,.main_block.education-area{
     padding: 4rem 0;
     font-family: var(--roboto);
 }
